@@ -1,0 +1,16 @@
+{
+  "name": "jobstack-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remote MCP connector for JobStack — a unified jobs-search API fusing official job-board feeds + ATS boards (USAJOBS, Adzuna, Jooble, The Muse, Reed, and Greenhouse/Lever/Ashby/Workable/SmartRecruiters behind one `ats` engine) into one flat Job shape, exposed as MCP tools for Claude/ChatGPT/any MCP client. The wrapped upstream is metered behind a RapidAPI proxy-secret guard; this connector authenticates its own outbound calls and applies a soft per-IP rate limit so the free MCP tier stays a discovery channel.",
+  "type": "module",
+  "main": "api/mcp.js",
+  "scripts": {
+    "dev": "node local-server.js",
+    "smoke": "node test/smoke.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.IsaiahDupree/jobstack-mcp",
+  "description": "Unified jobs search over official feeds + ATS boards (USAJOBS, Adzuna, Muse, Greenhouse, Lever...)",
+  "version": "1.0.0",
+  "websiteUrl": "https://jobstack-mcp.vercel.app",
+  "repository": {
+    "url": "https://github.com/IsaiahDupree/jobstack-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://jobstack-mcp.vercel.app/mcp"
+    }
+  ]
+}
