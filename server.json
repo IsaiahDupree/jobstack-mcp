@@ -6,7 +6,8 @@
   "websiteUrl": "https://jobstack-mcp.vercel.app",
   "repository": {
     "url": "https://github.com/IsaiahDupree/jobstack-mcp",
-    "source": "github"
+    "source": "github",
+    "id": ""
   },
   "remotes": [
     {
