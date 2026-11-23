@@ -1,6 +1,7 @@
 // api/health.js — unauthenticated health check.
-import { BASE_URL_FOR_HEALTH } from '../lib/tools.js';
+import { upstreamStatus } from '../lib/tools.js';
 
 export default function handler(req, res) {
-  res.status(200).json({ ok: true, service: 'jobstack-mcp', upstream: BASE_URL_FOR_HEALTH });
+  const status = upstreamStatus();
+  res.status(200).json({ ok: true, service: 'jobstack-mcp', upstream: status.baseUrl ?? null, upstream_status: status });
 }
